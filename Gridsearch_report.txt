@@ -1,0 +1,78 @@
+# Tuning hyper-parameters for precision
+
+Best parameters set found on development set:
+
+{'linear svc__C': 1}
+
+Grid scores on development set:
+
+0.824 (+/-0.029) for {'linear svc__C': 1}
+0.782 (+/-0.015) for {'linear svc__C': 10}
+0.732 (+/-0.005) for {'linear svc__C': 100}
+0.718 (+/-0.002) for {'linear svc__C': 1000}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+                         precision    recall  f1-score   support
+
+            APPLICATION       0.80      0.70      0.74        46
+                   BILL       0.90      0.90      0.90      3792
+            BILL BINDER       0.45      0.09      0.14        58
+                 BINDER       0.84      0.88      0.86      1790
+    CANCELLATION NOTICE       0.83      0.86      0.85      1946
+     CHANGE ENDORSEMENT       0.91      0.80      0.85       178
+            DECLARATION       0.68      0.19      0.29       193
+   DELETION OF INTEREST       0.91      0.89      0.90       965
+      EXPIRATION NOTICE       0.84      0.71      0.77       147
+INTENT TO CANCEL NOTICE       0.50      0.28      0.36        46
+     NON-RENEWAL NOTICE       0.89      0.89      0.89       125
+          POLICY CHANGE       0.81      0.86      0.84      2123
+   REINSTATEMENT NOTICE       0.94      0.94      0.94       873
+         RETURNED CHECK       0.98      0.86      0.91       150
+
+               accuracy                           0.87     12432
+              macro avg       0.81      0.70      0.73     12432
+           weighted avg       0.86      0.87      0.86     12432
+
+
+# Tuning hyper-parameters for recall
+
+Best parameters set found on development set:
+
+{'linear svc__C': 10}
+
+Grid scores on development set:
+
+0.681 (+/-0.017) for {'linear svc__C': 1}
+0.727 (+/-0.016) for {'linear svc__C': 10}
+0.715 (+/-0.005) for {'linear svc__C': 100}
+0.704 (+/-0.007) for {'linear svc__C': 1000}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+                         precision    recall  f1-score   support
+
+            APPLICATION       0.72      0.74      0.73        46
+                   BILL       0.90      0.90      0.90      3792
+            BILL BINDER       0.29      0.19      0.23        58
+                 BINDER       0.85      0.88      0.86      1790
+    CANCELLATION NOTICE       0.85      0.87      0.86      1946
+     CHANGE ENDORSEMENT       0.84      0.81      0.83       178
+            DECLARATION       0.52      0.27      0.36       193
+   DELETION OF INTEREST       0.92      0.91      0.92       965
+      EXPIRATION NOTICE       0.78      0.76      0.77       147
+INTENT TO CANCEL NOTICE       0.58      0.57      0.57        46
+     NON-RENEWAL NOTICE       0.86      0.91      0.89       125
+          POLICY CHANGE       0.82      0.84      0.83      2123
+   REINSTATEMENT NOTICE       0.94      0.94      0.94       873
+         RETURNED CHECK       0.93      0.90      0.92       150
+
+               accuracy                           0.87     12432
+              macro avg       0.77      0.75      0.76     12432
+           weighted avg       0.86      0.87      0.86     12432
