@@ -9,12 +9,8 @@ Go to http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstal
 This is used to predict a single document. Send a json format data `{'words':"xxxxx document words xxxxx"}` to http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstalk.com/predict . The API is going to send back the prediction and a confidence score as following: `{'confidence': 'xx%', 'prediction': 'xxxx'}`. <br/>
 Here are some sample codes in python to test API:<br/>
 `import request`<br/>
-`words = {'words':'XXXXX XXXXX XXXXX'}`
-url = 'http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstalk.com/predict'
-
-
-r = requests.post(url_2,json=words)
-
-
-print(r.json())`
+`words = {'words':'XXXXX XXXXX XXXXX'}`<br/>
+`url = 'http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstalk.com/predict'`<br/>
+`r = requests.post(url_2,json=words)`<br/>
+`print(r.json())`<br/>
 
