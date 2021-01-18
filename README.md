@@ -7,7 +7,7 @@
 (5) The full dataset is used to train the model for deployment.(model_whole_dataset_svc_linear_C_1.joblib)<br/>
 ## 2 Test Webservice
 The Model is deployed as a flask web application using AWS Elastic Beanstalk. 
-#### (1) Upload csv file to website
+#### (1) Upload an .csv file on the website
 Go to http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstalk.com and upload an .csv file which contains multiple document text data. <br/>
 The csv file should be smaller than 60M. The csv file should not include any headers and NAN values. Check some test cases in test_cases folder. <br/>
 The website is going to return a .csv file with predicted classes for test data. <br/>
