@@ -10,7 +10,6 @@ This is used to predict a single document. Send a json format data `{'words':"xx
 Here is an Jupyter notebook example:<br/>
 `import request`
 
-
 `words = {'words':'XXXXX XXXXX XXXXX'}`
 
 
