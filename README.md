@@ -1,6 +1,10 @@
 # Heavywater-document-classification
-## 1 Model development 
-The support vector machine model is trained on the dataset. Check training_model.ipynb
+## 1 Model development (Check training_model.ipynb)
+(1) Data exploration and transform dataset to TF-IDF represtation<br/>
+(2) A support vector machine model with linear kernal is trained on the dataset.<br/>
+(3) Grid search is used to find the best parameters C for support vector machine.<br/>
+(4) The accuracy of the model is around 87%.<br/>
+(5) The full dataset is used to train the model for deployment.<br/>
 ## 2 Test Webservice
 The Model is deployed as a flask web application using AWS Elastic Beanstalk. 
 #### (1) Upload csv file to website
