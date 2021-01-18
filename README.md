@@ -4,7 +4,7 @@
 (2) A support vector machine model with linear kernel is trained on the dataset.<br/>
 (3) Grid search is used to find the best parameters C for support vector machine.(see Gridsearch_report.txt)<br/>
 (4) The accuracy of the model is around 87%.<br/>
-(5) The full dataset is used to train the model for deployment.<br/>
+(5) The full dataset is used to train the model for deployment.(model_whole_dataset_svc_linear_C_1.joblib)<br/>
 ## 2 Test Webservice
 The Model is deployed as a flask web application using AWS Elastic Beanstalk. 
 #### (1) Upload csv file to website
