@@ -11,6 +11,6 @@ Here are some sample codes in python to test API:<br/>
 `import request`<br/>
 `words = {'words':'XXXXX XXXXX XXXXX'}`<br/>
 `url = 'http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstalk.com/predict'`<br/>
-`r = requests.post(url_2,json=words)`<br/>
+`r = requests.post(url,json=words)`<br/>
 `print(r.json())`<br/>
 
