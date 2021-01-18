@@ -11,7 +11,7 @@ The Model is deployed as a flask web application using AWS Elastic Beanstalk.
 Go to http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstalk.com and upload an csv file which contains multiple document text. <br/>
 The csv file should be smaller than 60M. The csv file should not include any headers and NAN values. Check some test cases in test_cases file. <br/>
 The website is going to return a csv file with predicted classes for test data. <br/>
-Large file cause longer time for the website to response. <br/>
+Large files cause longer time for the website to response. Recommend testing the website from small files<br/>
 #### (2) Send a json format data to the API
 Each call is used to predict a single document. Send a json format data `{'words':"xxxxx document words xxxxx"}` to http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstalk.com/predict . The API is going to send back the prediction and a confidence score as following: `{'confidence': 'xx%', 'prediction': 'xxxx'}`. <br/>
 Here are some sample codes in python to test API:<br/>
