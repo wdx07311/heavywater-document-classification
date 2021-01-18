@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Document Classification</title>
+
+  </head>
+  <style>
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
+    </style>
+ <body>
+      <div class="content">
+        <h1>Document Classification</h1>
+      
+        <form action="{{ url_for("text_classify")}}" method="POST" enctype="multipart/form-data" class='formData'>
+            <p id="t1">
+              Upload .csv file for predictions. 
+              The .csv file should be smaller than 100M and should not include any headers
+            </p>
+              <input type="file" name="test_file" id="1" accept=".csv" required/>
+            <br><br>
+              <input type="submit" value="Submit">
+      </div>
+     
+        
+  </body>
+</html>

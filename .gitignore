@@ -1,0 +1,9 @@
+svc_tfidf-0-23-2.joblib
+svc_tfidf.joblib
+test.csv
+shuffled-full-set-hashed.csv
+__pycache__/
+.ebextensions/
+.ipynb_checkpoints/
+.vscode/
+.ebignore
