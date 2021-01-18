@@ -11,5 +11,5 @@ This is used to predict a single document. Send a json format data `{'words':"xx
 words = {'words':'XXXXX XXXXX XXXXX'}
 url = 'http://documentclassification-env-1.eba-u5nvpkwp.us-east-1.elasticbeanstalk.com/predict'
 r = requests.post(url_2,json=words)
-print(r.json())'
+print(r.json())`
 
